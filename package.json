@@ -1,0 +1,12 @@
+{
+    "name": "htmx-example",
+    "scripts": {
+        "dev": "bun run --hot src/index.tsx"
+    },
+    "dependencies": {
+        "hono": "^4.5.1"
+    },
+    "devDependencies": {
+        "@types/bun": "latest"
+    }
+}
