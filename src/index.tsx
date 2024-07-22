@@ -27,7 +27,8 @@ apiRouter.delete("/todos/:id", todoController.delete);
 
 app.route("/api", apiRouter);
 
+const port = process.env.PORT || 8080;
 export default {
-  port: 8080,
+  port,
   fetch: app.fetch,
 };
