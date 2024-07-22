@@ -9,7 +9,7 @@ db.run(
 
 // ORM
 export const insertTodo = db.prepare(
-  "INSERT INTO todos (content) VALUES ($content)"
+  "INSERT INTO todos (content) VALUES ($content) RETURNING *"
 );
 export const getTodo = db.prepare("SELECT * FROM todos WHERE id=?");
 export const updateTodoContent = db.prepare(

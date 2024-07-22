@@ -21,12 +21,8 @@ const updateIsComplete = (isComplete: boolean) => async (c: Context) => {
 export const todoController = {
   create: async (c: Context) => {
     const { content } = await c.req.json();
-    const { lastInsertRowid } = insertTodo.run({ $content: content });
-    return c.html(
-      <TodoItem
-        todo={{ id: lastInsertRowid as number, content, isComplete: false }}
-      />
-    );
+    const todo = insertTodo.get({ $content: content }) as Todo;
+    return c.html(<TodoItem todo={todo} />);
   },
   updateContent: async (c: Context) => {
     const todoId = c.req.param("id");
