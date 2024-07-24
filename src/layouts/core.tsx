@@ -7,12 +7,10 @@ export const Core = ({ children }: PropsWithChildren) => (
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <script src="./static/htmx.min.js" />
       <script src="./static/index.js" />
-      <script src="https://unpkg.com/htmx.org@1.9.12/dist/ext/json-enc.js" />
-      <script
-        defer
-        src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
-      />
+      <script defer src="./static/alpine.min.js" />
       <link href="./static/root.css" rel="stylesheet" />
+
+      <title>bun-htmx-alpine</title>
     </head>
     <body className="bg-gray-200 max-w-[800px] m-auto p-6">
       <div

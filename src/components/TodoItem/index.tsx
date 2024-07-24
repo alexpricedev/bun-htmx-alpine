@@ -50,7 +50,7 @@ export const TodoItem = ({ todo }: TodoItemProps) => (
         type="text"
         value={todo.content}
         x-on:focus="$el.select()"
-        x-on:blur="$el.submit()"
+        x-on:blur="$el.parentNode.dispatchEvent(new Event('submit'))"
       />
     </form>
     <button
