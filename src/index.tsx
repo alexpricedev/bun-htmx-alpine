@@ -10,7 +10,7 @@ import type { Todo } from "@/types/Todo";
 
 const app = new Hono();
 
-app.use("/static/*", serveStatic({ root: "./" }));
+app.use("/public/*", serveStatic({ root: "./" }));
 
 app.get("/", (c) => {
   const todos = db.query("SELECT * FROM todos").all() as Todo[];

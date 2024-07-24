@@ -5,10 +5,10 @@ export const Core = ({ children }: PropsWithChildren) => (
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <script src="./static/htmx.min.js" />
-      <script src="./static/index.js" />
-      <script defer src="./static/alpine.min.js" />
-      <link href="./static/root.css" rel="stylesheet" />
+      <script src="./public/htmx.min.js" />
+      <script src="./public/index.js" />
+      <script defer src="./public/alpine.min.js" />
+      <link href="./public/root.css" rel="stylesheet" />
 
       <title>bun-htmx-alpine</title>
     </head>
