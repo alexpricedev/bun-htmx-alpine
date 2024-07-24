@@ -1,2 +1,5 @@
-# deps
+# locally installed deps
 node_modules/
+
+# locally compiled static files
+static/

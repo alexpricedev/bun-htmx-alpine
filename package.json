@@ -1,10 +1,13 @@
 {
     "name": "htmx-example",
     "scripts": {
-        "dev": "bun run --hot src/index.tsx"
+        "dev": "bun scripts/dev.ts",
+        "prod:build": "bun scripts/build-prod.ts",
+        "prod:start": "bun src/index.tsx"
     },
     "dependencies": {
-        "hono": "^4.5.1"
+        "hono": "^4.5.1",
+        "tailwindcss": "^3.4.6"
     },
     "devDependencies": {
         "@types/bun": "latest"

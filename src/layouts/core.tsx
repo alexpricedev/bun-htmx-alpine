@@ -15,7 +15,7 @@ export const Core = ({ children }: PropsWithChildren) => (
         defer
         src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
       />
-      <script src="https://cdn.tailwindcss.com" />
+      <link href="./static/root.css" rel="stylesheet" />
     </head>
     <body className="bg-gray-200 max-w-[800px] m-auto p-6">
       <div

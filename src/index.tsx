@@ -1,4 +1,5 @@
 import { Hono } from "hono";
+import { serveStatic } from "hono/bun";
 
 import { db } from "@/db";
 import { HomePage } from "@/pages/home";
@@ -8,6 +9,8 @@ import { todoController } from "@/controllers/todos";
 import type { Todo } from "@/types/Todo";
 
 const app = new Hono();
+
+app.use("/static/*", serveStatic({ root: "./" }));
 
 app.get("/", (c) => {
   const todos = db.query("SELECT * FROM todos").all() as Todo[];
