@@ -5,11 +5,8 @@ export const Core = ({ children }: PropsWithChildren) => (
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <script
-        src="https://unpkg.com/htmx.org@2.0.1"
-        integrity="sha384-QWGpdj554B4ETpJJC9z+ZHJcA/i59TyjxEPXiiUgN2WmTyV5OEZWCD6gQhgkdpB/"
-        crossorigin="anonymous"
-      />
+      <script src="./static/htmx.min.js" />
+      <script src="./static/index.js" />
       <script src="https://unpkg.com/htmx.org@1.9.12/dist/ext/json-enc.js" />
       <script
         defer
